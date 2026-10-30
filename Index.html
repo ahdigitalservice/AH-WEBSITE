@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankit Hajare | Digital Business Consultant</title>
+    <meta name="description" content="Ankit Hajare - Digital Business Consultant specializing in Digital Automation & AI, Custom Software Development, Engineering Consulting, and Data Management.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif'],
+                    },
+                    colors: {
+                        navy: {
+                            950: '#050a18',
+                            900: '#0a1229',
+                            800: '#111e40',
+                        },
+                        gold: {
+                            400: '#f3cf7a',
+                            500: '#d4af37',
+                            600: '#b59024',
+                        },
+                        tech: {
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        body {
+            background-color: #050a18;
+            color: #f8fafc;
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #f3cf7a 0%, #d4af37 50%, #aa821c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-gradient-bg {
+            background: linear-gradient(135deg, #f3cf7a 0%, #d4af37 55%, #b59024 100%);
+        }
+        .tech-grid {
+            background-size: 40px 40px;
+            background-image: 
+                linear-gradient(to right, rgba(212, 175, 55, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(56, 189, 248, 0.05) 1px, transparent 1px);
+        }
+        .glass-card {
+            background: rgba(17, 30, 64, 0.55);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(212, 175, 55, 0.18);
+        }
+        .glass-card:hover {
+            border-color: rgba(212, 175, 55, 0.5);
+            box-shadow: 0 10px 30px -10px rgba(212, 175, 55, 0.15);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-gold-500 selection:text-navy-950 overflow-x-hidden">
+
+    <!-- Top Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-navy-950/85 backdrop-blur-md border-b border-gold-500/20">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <!-- Brand Monogram & Name -->
+            <a href="#" class="flex items-center gap-3.5 group">
+                <div class="w-11 h-11 rounded-lg bg-navy-900 border border-gold-500/40 flex items-center justify-center shadow-inner group-hover:border-gold-400 transition">
+                    <svg class="w-7 h-7" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 48L28 16L38 48" stroke="#d4af37" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M21 38H35" stroke="#d4af37" stroke-width="4" stroke-linecap="round"/>
+                        <path d="M38 16V48M50 16V48M38 32H50" stroke="#38bdf8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="14" cy="24" r="3" fill="#d4af37"/>
+                        <circle cx="56" cy="24" r="3" fill="#38bdf8"/>
+                        <path d="M17 24H24M50 24H53" stroke="#f3cf7a" stroke-width="2"/>
+                    </svg>
+                </div>
+                <div>
+                    <span class="font-display font-bold text-lg tracking-wider block leading-none gold-gradient-text">ANKIT HAJARE</span>
+                    <span class="text-[11px] uppercase tracking-widest text-slate-400 block mt-1">Digital Business Consultant</span>
+                </div>
+            </a>
+
+            <!-- Desktop Links -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#services" class="hover:text-gold-400 transition">Core Services</a>
+                <a href="#automation" class="hover:text-gold-400 transition">Automation Suite</a>
+                <a href="#roi-calculator" class="hover:text-gold-400 transition">ROI Calculator</a>
+                <a href="#contact" class="hover:text-gold-400 transition">Contact</a>
+            </nav>
+
+            <!-- Direct CTA -->
+            <div class="flex items-center gap-3">
+                <a href="https://wa.me/917020432814?text=Hi%20Ankit,%20I%20would%20like%20to%20discuss%20a%20digital%20automation%20or%20consulting%20project." target="_blank" class="gold-gradient-bg text-navy-950 font-semibold text-sm px-5 py-2.5 rounded-lg shadow-lg hover:brightness-110 transition flex items-center gap-2">
+                    <i data-lucide="message-square" class="w-4 h-4"></i>
+                    <span>Let's Talk</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-24 md:pt-44 md:pb-32 tech-grid overflow-hidden">
+        <!-- Ambient Glows -->
+        <div class="absolute top-20 left-1/4 w-96 h-96 bg-gold-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-10 right-1/4 w-96 h-96 bg-tech-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-navy-900 border border-gold-500/30 text-gold-400 text-xs font-semibold tracking-wide uppercase">
+                        <span class="w-2 h-2 rounded-full bg-tech-400 animate-pulse"></span>
+                        Engineering Precision Meets Digital Automation
+                    </div>
+                    
+                    <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.12]">
+                        Transform Manual Operations Into <span class="gold-gradient-text">Autonomous Systems.</span>
+                    </h1>
+                    
+                    <p class="text-slate-300 text-lg leading-relaxed max-w-2xl">
+                        I help businesses eliminate repetitive bottlenecks, build custom software applications, structure complex operational data, and deploy engineering-grade workflows that scale effortlessly.
+                    </p>
+
+                    <div class="flex flex-wrap items-center gap-4 pt-2">
+                        <a href="#contact" class="gold-gradient-bg text-navy-950 font-bold px-7 py-4 rounded-xl shadow-lg hover:brightness-110 transition flex items-center gap-2">
+                            <span>Schedule a Consultation</span>
+                            <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#services" class="px-7 py-4 rounded-xl bg-navy-900/90 border border-slate-700 hover:border-gold-500/50 text-slate-200 font-semibold transition">
+                            Explore Capabilities
+                        </a>
+                    </div>
+
+                    <!-- Quick Trust Metrics -->
+                    <div class="pt-8 grid grid-cols-3 gap-6 border-t border-slate-800/80 max-w-lg">
+                        <div>
+                            <p class="font-display text-2xl font-bold text-gold-400">10x</p>
+                            <p class="text-xs text-slate-400 mt-0.5">Faster Process Execution</p>
+                        </div>
+                        <div>
+                            <p class="font-display text-2xl font-bold text-tech-400">100%</p>
+                            <p class="text-xs text-slate-400 mt-0.5">Tailored Architecture</p>
+                        </div>
+                        <div>
+                            <p class="font-display text-2xl font-bold text-gold-400">24/7</p>
+                            <p class="text-xs text-slate-400 mt-0.5">Automated Workflows</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column Interactive Digital Card Preview -->
+                <div class="lg:col-span-5">
+                    <div class="glass-card rounded-2xl p-8 relative overflow-hidden shadow-2xl">
+                        <div class="absolute -right-12 -top-12 w-40 h-40 bg-gold-500/15 rounded-full blur-2xl"></div>
+                        <div class="flex items-center justify-between border-b border-slate-800 pb-6">
+                            <div>
+                                <h2 class="font-display text-2xl font-bold gold-gradient-text">ANKIT HAJARE</h2>
+                                <p class="text-xs tracking-widest uppercase text-slate-300 mt-1">Digital Business Consultant</p>
+                            </div>
+                            <div class="w-12 h-12 rounded-xl bg-navy-950 border border-gold-500/40 flex items-center justify-center">
+                                <i data-lucide="cpu" class="w-6 h-6 text-gold-400"></i>
+                            </div>
+                        </div>
+
+                        <div class="py-6 space-y-4">
+                            <p class="text-xs uppercase tracking-wider text-gold-400 font-semibold">Core Pillars</p>
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-3 bg-navy-950/60 p-3 rounded-lg border border-slate-800/80">
+                                    <i data-lucide="bot" class="w-5 h-5 text-tech-400 shrink-0"></i>
+                                    <span class="text-sm font-medium">Digital Automation & AI Workflows</span>
+                                </div>
+                                <div class="flex items-center gap-3 bg-navy-950/60 p-3 rounded-lg border border-slate-800/80">
+                                    <i data-lucide="code-2" class="w-5 h-5 text-gold-400 shrink-0"></i>
+                                    <span class="text-sm font-medium">Custom Software & Web App Development</span>
+                                </div>
+                                <div class="flex items-center gap-3 bg-navy-950/60 p-3 rounded-lg border border-slate-800/80">
+                                    <i data-lucide="cog" class="w-5 h-5 text-tech-400 shrink-0"></i>
+                                    <span class="text-sm font-medium">Engineering & Operations Consulting</span>
+                                </div>
+                                <div class="flex items-center gap-3 bg-navy-950/60 p-3 rounded-lg border border-slate-800/80">
+                                    <i data-lucide="database" class="w-5 h-5 text-gold-400 shrink-0"></i>
+                                    <span class="text-sm font-medium">Data Management & Live Analytics</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 border-t border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-slate-300">
+                            <a href="tel:+917020432814" class="flex items-center gap-2 hover:text-gold-400 transition">
+                                <i data-lucide="phone" class="w-4 h-4 text-gold-400"></i>
+                                +91 70204 32814
+                            </a>
+                            <a href="mailto:ankithajare84@gmail.com" class="flex items-center gap-2 hover:text-gold-400 transition">
+                                <i data-lucide="mail" class="w-4 h-4 text-gold-400"></i>
+                                ankithajare84@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Services Section -->
+    <section id="services" class="py-24 bg-navy-900/50 border-y border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <p class="text-gold-400 text-xs font-bold uppercase tracking-widest mb-2">Consulting & Architecture</p>
+                <h2 class="font-display text-3xl sm:text-4xl font-bold">Comprehensive Business Solutions</h2>
+                <p class="text-slate-400 mt-3">Combining structured engineering discipline with modern software architecture to solve real-world operational challenges.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Card 1 -->
+                <div class="glass-card rounded-2xl p-8 transition duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center mb-6">
+                        <i data-lucide="sparkles" class="w-6 h-6 text-gold-400"></i>
+                    </div>
+                    <h3 class="font-display text-xl font-bold mb-3">Digital Automation & AI</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-5">
+                        Eliminate repetitive human intervention across your daily business workflows. From smart data capture to AI-assisted decision pipelines, your operations run accurately around the clock.
+                    </p>
+                    <ul class="space-y-2 text-xs text-slate-400">
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-tech-400"></i> End-to-end Google Workspace & cloud workflow automation</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-tech-400"></i> AI document parsing, automated alerts, and smart triggers</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-tech-400"></i> Cross-platform API and webhook integrations</li>
+                    </ul>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="glass-card rounded-2xl p-8 transition duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-tech-500/10 border border-tech-500/30 flex items-center justify-center mb-6">
+                        <i data-lucide="terminal" class="w-6 h-6 text-tech-400"></i>
+                    </div>
+                    <h3 class="font-display text-xl font-bold mb-3">Software Development</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-5">
+                        Bespoke web applications, internal business portals, and clinical or commercial management systems designed around your exact workflow rather than rigid off-the-shelf templates.
+                    </p>
+                    <ul class="space-y-2 text-xs text-slate-400">
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-gold-400"></i> Custom web apps for clinics, retail, and manufacturing</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-gold-400"></i> Client registration, billing, and treatment/order accounting</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-gold-400"></i> Responsive, lightweight, zero-maintenance cloud deployment</li>
+                    </ul>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="glass-card rounded-2xl p-8 transition duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center mb-6">
+                        <i data-lucide="sliders" class="w-6 h-6 text-gold-400"></i>
+                    </div>
+                    <h3 class="font-display text-xl font-bold mb-3">Engineering Consulting</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-5">
+                        Optimize shop-floor workflows, production planning, and technical onboarding. Apply lean manufacturing principles and digital tracking to maximize throughput and reduce downtime.
+                    </p>
+                    <ul class="space-y-2 text-xs text-slate-400">
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-tech-400"></i> Production planning, control, and real-time OEE tracking</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-tech-400"></i> Visual SOP standardization and technical onboarding manuals</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-tech-400"></i> Process bottleneck auditing and workflow re-engineering</li>
+                    </ul>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="glass-card rounded-2xl p-8 transition duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-tech-500/10 border border-tech-500/30 flex items-center justify-center mb-6">
+                        <i data-lucide="bar-chart-3" class="w-6 h-6 text-tech-400"></i>
+                    </div>
+                    <h3 class="font-display text-xl font-bold mb-3">Data Management Services</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-5">
+                        Turn scattered spreadsheets and paper registers into structured, secure, and queryable databases paired with live executive dashboards for instant clarity.
+                    </p>
+                    <ul class="space-y-2 text-xs text-slate-400">
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-gold-400"></i> Interactive financial and operational KPI dashboards</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-gold-400"></i> Automated data validation, sanitization, and cloud backups</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-gold-400"></i> Role-based access and historical trend reporting</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialized Digital Automation Expansion -->
+    <section id="automation" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">
+                <div>
+                    <p class="text-tech-400 text-xs font-bold uppercase tracking-widest mb-2">High-Impact Deliverables</p>
+                    <h2 class="font-display text-3xl sm:text-4xl font-bold">Specialized Automation Suite</h2>
+                </div>
+                <p class="text-slate-400 text-sm max-w-md">
+                    Ready-to-deploy digital systems tailored for clinics, manufacturing units, agencies, and growing regional enterprises.
+                </p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="p-6 rounded-xl bg-navy-900/90 border border-slate-800 hover:border-gold-500/40 transition">
+                    <i data-lucide="file-check-2" class="w-7 h-7 text-gold-400 mb-4"></i>
+                    <h4 class="font-display font-bold text-lg mb-2">Automated Document & Invoice Generation</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">Instantly generate branded PDF invoices, clinical prescriptions, quotations, and certificates upon form submission or database approval.</p>
+                </div>
+
+                <div class="p-6 rounded-xl bg-navy-900/90 border border-slate-800 hover:border-gold-500/40 transition">
+                    <i data-lucide="git-merge" class="w-7 h-7 text-tech-400 mb-4"></i>
+                    <h4 class="font-display font-bold text-lg mb-2">SOP Digitalization & Process Mapping</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">Audit manual operations, eliminate redundant steps, and convert paper checklists into guided digital forms with mandatory validation.</p>
+                </div>
+
+                <div class="p-6 rounded-xl bg-navy-900/90 border border-slate-800 hover:border-gold-500/40 transition">
+                    <i data-lucide="activity" class="w-7 h-7 text-gold-400 mb-4"></i>
+                    <h4 class="font-display font-bold text-lg mb-2">Live Production & Inventory Tracking</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">Real-time machine shop tracking, low-stock alerts, and automated vendor purchase order triggers that prevent supply chain stalls.</p>
+                </div>
+
+                <div class="p-6 rounded-xl bg-navy-900/90 border border-slate-800 hover:border-gold-500/40 transition">
+                    <i data-lucide="webhook" class="w-7 h-7 text-tech-400 mb-4"></i>
+                    <h4 class="font-display font-bold text-lg mb-2">Cross-Platform App Integration</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">Connect Google Workspace, WhatsApp notifications, accounting tools, and custom web dashboards so data entered once updates everywhere.</p>
+                </div>
+
+                <div class="p-6 rounded-xl bg-navy-900/90 border border-slate-800 hover:border-gold-500/40 transition">
+                    <i data-lucide="pie-chart" class="w-7 h-7 text-gold-400 mb-4"></i>
+                    <h4 class="font-display font-bold text-lg mb-2">Executive BI & Analytics Portals</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">Interactive visual dashboards tracking daily revenue, department output, client retention, and cost breakdowns on mobile or desktop.</p>
+                </div>
+
+                <div class="p-6 rounded-xl bg-navy-900/90 border border-slate-800 hover:border-gold-500/40 transition">
+                    <i data-lucide="shield-check" class="w-7 h-7 text-tech-400 mb-4"></i>
+                    <h4 class="font-display font-bold text-lg mb-2">Automation Care & Retainer Support</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">Continuous monitoring, database backup management, API health checks, and rapid feature upgrades as your business scales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive ROI Calculator -->
+    <section id="roi-calculator" class="py-20 bg-navy-900/70 border-y border-slate-800">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="glass-card rounded-3xl p-8 md:p-12">
+                <div class="grid md:grid-cols-2 gap-10 items-center">
+                    <div>
+                        <p class="text-gold-400 text-xs font-bold uppercase tracking-widest mb-2">Estimate Your Impact</p>
+                        <h3 class="font-display text-2xl sm:text-3xl font-bold mb-4">Automation ROI Calculator</h3>
+                        <p class="text-slate-300 text-sm mb-6">
+                            See how much time and productive capacity your team reclaims by automating repetitive data entry, reporting, and follow-up tasks.
+                        </p>
+
+                        <div class="space-y-5">
+                            <div>
+                                <div class="flex justify-between text-xs font-semibold mb-2">
+                                    <span class="text-slate-300">Team Members Handling Admin/Data</span>
+                                    <span id="teamVal" class="text-gold-400">4 People</span>
+                                </div>
+                                <input id="teamSlider" type="range" min="1" max="25" value="4" class="w-full accent-amber-400 bg-navy-950 h-2 rounded-lg cursor-pointer">
+                            </div>
+
+                            <div>
+                                <div class="flex justify-between text-xs font-semibold mb-2">
+                                    <span class="text-slate-300">Manual Hours Spent Per Person / Week</span>
+                                    <span id="hoursVal" class="text-tech-400">8 Hours</span>
+                                </div>
+                                <input id="hoursSlider" type="range" min="2" max="30" value="8" class="w-full accent-sky-400 bg-navy-950 h-2 rounded-lg cursor-pointer">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-navy-950/90 border border-gold-500/30 rounded-2xl p-8 text-center space-y-6">
+                        <div>
+                            <p class="text-xs uppercase tracking-widest text-slate-400">Estimated Time Saved Annually</p>
+                            <p id="savedHours" class="font-display text-4xl sm:text-5xl font-bold gold-gradient-text mt-2">1,331 hrs</p>
+                        </div>
+                        <div class="border-t border-slate-800 pt-5">
+                            <p class="text-xs uppercase tracking-widest text-slate-400">Equivalent Workdays Reclaimed</p>
+                            <p id="savedDays" class="font-display text-2xl font-bold text-tech-400 mt-1">166 Full Workdays / Year</p>
+                        </div>
+                        <a href="#contact" class="block w-full gold-gradient-bg text-navy-950 font-bold text-sm py-3.5 rounded-xl hover:brightness-110 transition">
+                            Claim Your Free Workflow Audit
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12">
+                <!-- Contact Info -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <p class="text-gold-400 text-xs font-bold uppercase tracking-widest mb-2">Get In Touch</p>
+                        <h2 class="font-display text-3xl sm:text-4xl font-bold">Let's Build Your Digital Advantage</h2>
+                        <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                            Reach out directly via phone, WhatsApp, or email to discuss custom software, process automation, or engineering consulting for your organization.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <a href="tel:+917020432814" class="flex items-center gap-4 p-4 rounded-xl glass-card transition group">
+                            <div class="w-12 h-12 rounded-lg bg-gold-500/10 border border-gold-500/30 flex items-center justify-center group-hover:bg-gold-500 group-hover:text-navy-950 transition text-gold-400">
+                                <i data-lucide="phone-call" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Direct Mobile & WhatsApp</p>
+                                <p class="font-display font-bold text-lg text-slate-100">+91 70204 32814</p>
+                            </div>
+                        </a>
+
+                        <a href="mailto:ankithajare84@gmail.com" class="flex items-center gap-4 p-4 rounded-xl glass-card transition group">
+                            <div class="w-12 h-12 rounded-lg bg-tech-500/10 border border-tech-500/30 flex items-center justify-center group-hover:bg-tech-400 group-hover:text-navy-950 transition text-tech-400">
+                                <i data-lucide="mail" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Email Address</p>
+                                <p class="font-display font-bold text-lg text-slate-100">ankithajare84@gmail.com</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Instant Project Inquiry Form -->
+                <div class="lg:col-span-7">
+                    <form id="inquiryForm" class="glass-card rounded-2xl p-8 space-y-6">
+                        <h3 class="font-display text-xl font-bold">Send a Project Inquiry</h3>
+                        
+                        <div class="grid sm:grid-cols-2 gap-5">
+                            <div>
+                                <label class="block text-xs font-medium text-slate-300 mb-2">Your Name *</label>
+                                <input type="text" id="clientName" required placeholder="Enter your full name" class="w-full px-4 py-3 rounded-xl bg-navy-950 border border-slate-700 text-sm focus:border-gold-400 focus:outline-none">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-medium text-slate-300 mb-2">Service Required *</label>
+                                <select id="clientService" class="w-full px-4 py-3 rounded-xl bg-navy-950 border border-slate-700 text-sm focus:border-gold-400 focus:outline-none">
+                                    <option value="Digital Automation & AI">Digital Automation & AI</option>
+                                    <option value="Custom Software / Web App">Custom Software / Web App</option>
+                                    <option value="Engineering Consulting">Engineering Consulting</option>
+                                    <option value="Data Management & Dashboards">Data Management & Dashboards</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-medium text-slate-300 mb-2">Project Brief or Bottleneck *</label>
+                            <textarea id="clientMessage" rows="4" required placeholder="Briefly describe what workflow or system you want to build or automate..." class="w-full px-4 py-3 rounded-xl bg-navy-950 border border-slate-700 text-sm focus:border-gold-400 focus:outline-none"></textarea>
+                        </div>
+
+                        <div class="flex flex-wrap gap-4 pt-2">
+                            <button type="submit" class="gold-gradient-bg text-navy-950 font-bold text-sm px-6 py-3.5 rounded-xl hover:brightness-110 transition flex items-center gap-2">
+                                <i data-lucide="send" class="w-4 h-4"></i>
+                                <span>Send via WhatsApp</span>
+                            </button>
+                            <button type="button" id="emailBtn" class="px-6 py-3.5 rounded-xl bg-navy-950 border border-slate-700 hover:border-gold-400 text-slate-200 font-semibold text-sm transition flex items-center gap-2">
+                                <i data-lucide="mail" class="w-4 h-4 text-gold-400"></i>
+                                <span>Send via Email</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800/80 py-10 bg-navy-950 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p class="font-semibold text-slate-300">ANKIT HAJARE — Digital Business Consultant</p>
+            <p>© <span id="year"></span> Ankit Hajare. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        lucide.createIcons();
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // ROI Calculator Logic (assumes 80% automation efficiency over 52 weeks)
+        const teamSlider = document.getElementById('teamSlider');
+        const hoursSlider = document.getElementById('hoursSlider');
+        const teamVal = document.getElementById('teamVal');
+        const hoursVal = document.getElementById('hoursVal');
+        const savedHours = document.getElementById('savedHours');
+        const savedDays = document.getElementById('savedDays');
+
+        function updateROI() {
+            const team = parseInt(teamSlider.value);
+            const hours = parseInt(hoursSlider.value);
+            teamVal.textContent = team + (team === 1 ? ' Person' : ' People');
+            hoursVal.textContent = hours + ' Hours';
+            
+            const annualHoursSaved = Math.round(team * hours * 52 * 0.8);
+            const annualDaysSaved = Math.round(annualHoursSaved / 8);
+            
+            savedHours.textContent = annualHoursSaved.toLocaleString() + ' hrs';
+            savedDays.textContent = annualDaysSaved.toLocaleString() + ' Full Workdays / Year';
+        }
+
+        teamSlider.addEventListener('input', updateROI);
+        hoursSlider.addEventListener('input', updateROI);
+
+        // Form Routing to WhatsApp & Email
+        document.getElementById('inquiryForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('clientName').value.trim();
+            const service = document.getElementById('clientService').value;
+            const message = document.getElementById('clientMessage').value.trim();
+            const text = `Hello Ankit, my name is ${name}.%0A%0A*Service:* ${service}%0A*Requirement:* ${message}`;
+            window.open(`https://wa.me/917020432814?text=${text}`, '_blank');
+        });
+
+        document.getElementById('emailBtn').addEventListener('click', function() {
+            const name = document.getElementById('clientName').value.trim() || 'Prospective Client';
+            const service = document.getElementById('clientService').value;
+            const message = document.getElementById('clientMessage').value.trim();
+            const subject = encodeURIComponent(`Consulting Inquiry: ${service} - ${name}`);
+            const body = encodeURIComponent(`Hello Ankit,\n\nName: ${name}\nService Required: ${service}\n\nProject Details:\n${message}`);
+            window.location.href = `mailto:ankithajare84@gmail.com?subject=${subject}&body=${body}`;
+        });
+    </script>
+</body>
+</html>
